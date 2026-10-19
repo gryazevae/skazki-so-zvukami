@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Приватность: страница загружает только свои файлы (connect-src 'self') без внешних ресурсов. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' blob:; img-src 'self' data:; style-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; media-src 'self' blob:; object-src 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:,">
+<title>Сказки со звуками · прототип SP1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ===== Главная ===== -->
+  <section id="home">
+    <h1>Сказки со звуками</h1>
+    <p class="muted">Локальный прототип для семейного теста. Взрослый читает вслух — звуки включает второй взрослый (режим «волшебник») или тот же читающий касанием слова.</p>
+    <div id="storyList"></div>
+    <div class="row">
+      <button class="btn" id="goSounds">Проверить все звуки</button>
+      <button class="btn" id="goDiary">Дневник теста</button>
+      <button class="btn ghost" id="themeHome">Тёмная / светлая тема</button>
+    </div>
+    <p class="note ok small">Микрофон включается только кнопкой «Слушать, как я читаю». Голос распознаётся на телефоне, не сохраняется и никуда не отправляется. Записи загружаются только с этого сервера; запасной звук — синтез. Дневник хранится только в этом браузере.</p>
+  </section>
+
+  <!-- ===== Выбор роли ===== -->
+  <section id="role" hidden>
+    <h2 id="roleTitle"></h2>
+    <p class="muted" id="roleMeta"></p>
+    <div class="roles">
+      <button class="btn role" data-role="wizard"><b>Волшебник (второй взрослый)</b><span class="muted">Большая кнопка «дальше» и все звуки сказки. Слушаете чтеца и нажимаете в нужный момент.</span></button>
+      <button class="btn role" data-role="reader"><b>Чтец</b><span class="muted">Крупный текст. Можно включить автослушание: телефон сам добавит звуки.</span></button>
+      <button class="btn role" data-role="solo"><b>Один телефон</b><span class="muted">Касайтесь текста для звуков или включите автослушание.</span></button>
+    </div>
+    <p><button class="btn ghost" id="roleBack">‹ К списку сказок</button></p>
+  </section>
+
+  <!-- ===== Чтение ===== -->
+  <section id="read" hidden>
+    <div class="topbar">
+      <button class="btn ghost" id="readBack" aria-label="Назад">‹</button>
+      <span class="title" id="readTitle"></span>
+      <span class="pill" id="rolePill"></span>
+      <span class="pill live" id="followPill" hidden>слушаю</span>
+      <button class="btn" id="settingsToggle" aria-expanded="false">Настройки</button>
+    </div>
+
+    <div class="card settings" id="settings" hidden>
+      <div class="row">
+        <span>Шрифт</span>
+        <button class="btn" id="fontMinus" aria-label="Мельче">A−</button>
+        <button class="btn" id="fontPlus" aria-label="Крупнее">A+</button>
+        <button class="btn" id="themeToggle">Тема</button>
+      </div>
+      <div class="row">
+        <label>Громкость <input type="range" id="volume" min="0" max="1.5" step="0.05"></label>
+        <label><input type="checkbox" id="ambient"> Тихий фон «лес»</label>
+      </div>
+      <p class="small muted" id="wakeNote"></p>
+
+    </div>
+    <div class="card" id="followBox">
+      <button class="btn primary" id="followToggle">Слушать, как я читаю</button>
+      <p class="small">Голос распознаётся только на этом телефоне и никуда не отправляется. Первый раз скачается модель 46 МБ</p>
+      <p id="followStatus" role="status"></p>
+      <button class="btn" id="extraSound" hidden>Лишний звук</button>
+    </div>
+
+    <div class="wiz" id="wiz" hidden>
+      <button class="next-btn" id="wizNext"><span class="ico"></span><span class="lbl"></span><span class="ctx"></span></button>
+      <div class="wiz-nav">
+        <button class="btn" id="wizPrev">‹ Назад</button>
+        <span id="wizPos" class="muted"></span>
+        <button class="btn" id="wizSkip">Пропустить ›</button>
+      </div>
+      <div class="grid" id="wizGrid"></div>
+      <details><summary class="small muted">Ещё звуки для импровизации</summary><div class="grid compact" id="wizExtra"></div></details>
+    </div>
+
+    <div id="soloHelp" hidden><p>Касайтесь текста в любом месте у пунктирной метки — заиграет следующий звук</p><button class="btn small" id="soloPrev">‹ Назад</button></div>
+    <article class="story" id="story"></article>
+    <p class="src" id="storySrc"></p>
+  </section>
+
+  <!-- ===== Проверка звуков ===== -->
+  <section id="sounds" hidden>
+    <h2>Проверка звуков</h2>
+    <p class="muted">Нажмите любой — так настраивается громкость до начала вечера. Выберите подходящий вариант. Если запись недоступна, звучит синтез.</p>
+    <div class="row"><label>Громкость <input type="range" id="volume2" min="0" max="1.5" step="0.05"></label></div>
+    <div class="grid" id="allGrid"></div><button class="btn" id="sourcesToggle">Откуда звуки</button><div id="soundSources" hidden></div>
+    <p><button class="btn ghost" id="soundsBack">‹ Назад</button></p>
+  </section>
+
+  <!-- ===== Дневник ===== -->
+  <section id="diary" hidden>
+    <h2>Дневник теста</h2>
+    <p class="muted small">Одна запись — один вечер. Хранится только в этом браузере (localStorage). Ничего не отправляется. Чтобы сохранить на память — «Показать как текст» и скопировать.</p>
+    <form class="card form" id="diaryForm" autocomplete="off">
+      <label for="dDate">Дата</label><input type="date" id="dDate">
+      <label for="dEvening">Вечер №</label>
+      <select id="dEvening"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select>
+      <label>Какие сказки прочитали</label><div class="opts" id="dStories"></div>
+      <label>Режим</label>
+      <div class="opts">
+        <label><input type="radio" name="dMode" value="волшебник" checked> волшебник (2 взрослых)</label>
+        <label><input type="radio" name="dMode" value="один телефон"> один телефон</label>
+        <label><input type="radio" name="dMode" value="автослежение"> автослежение</label>
+      </div>
+      <label>Звуки успевали вовремя? (на глаз)</label>
+      <div class="opts">
+        <label><input type="radio" name="dTiming" value="да"> да</label>
+        <label><input type="radio" name="dTiming" value="в основном"> в основном</label>
+        <label><input type="radio" name="dTiming" value="нет"> нет</label>
+      </div>
+      <label for="dFalse">Ложные срабатывания (только автослежение), шт.</label><input type="number" id="dFalse" min="0" step="1">
+      <label>Просил ли ребёнок ещё?</label>
+      <div class="opts">
+        <label><input type="radio" name="dMore" value="сам попросил ещё"> сам попросил ещё</label>
+        <label><input type="radio" name="dMore" value="согласился, когда предложили"> согласился, когда предложили</label>
+        <label><input type="radio" name="dMore" value="нет"> нет</label>
+      </div>
+      <label>Кто предложил сказку на этот вечер?</label>
+      <div class="opts">
+        <label><input type="radio" name="dWho" value="ребёнок"> ребёнок</label>
+        <label><input type="radio" name="dWho" value="взрослый"> взрослый</label>
+      </div>
+      <label for="dLiked">Какие звуки понравились / ребёнок повторял</label><input type="text" id="dLiked">
+      <label for="dBad">Какие звуки пугали или мешали</label><input type="text" id="dBad">
+      <label for="dNote">Комментарий (дословно, что сказал ребёнок)</label><textarea id="dNote" rows="3"></textarea>
+      <p class="small muted" id="dPresses"></p>
+      <div class="row"><button class="btn primary" type="submit">Сохранить вечер</button></div>
+    </form>
+    <div id="diaryList"></div>
+    <div class="row">
+      <button class="btn" id="diaryExport">Показать как текст</button>
+      <button class="btn ghost" id="diaryBack">‹ Назад</button>
+    </div>
+    <textarea class="export" id="diaryText" readonly hidden></textarea>
+  </section>
+
+</div>
+
+<div class="dock" id="dock" hidden>
+  <div class="inner">
+    <details id="dockDetails"><summary>Звуки сказки</summary><div class="grid compact" id="dockGrid"></div></details>
+  </div>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script src="audio/manifest.js"></script>
+<script src="sounds.js"></script>
+<script src="stories.js"></script>
+<script src="follow_core.js"></script>
+<script src="vendor/vosk.js"></script>
+<script src="follow_vosk.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,649 @@
+{
+  "version": "2026-10-19",
+  "sounds": {
+    "birds": {
+      "default": 1,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/birds_1.mp3",
+          "dur": 4.049,
+          "gain": 1.0,
+          "note": "Короткая фраза лесной птицы",
+          "src": "File:Yellowstone sound library - American Robin - 001.mp3",
+          "page": "https://commons.wikimedia.org/wiki/File:Yellowstone_sound_library_-_American_Robin_-_001.mp3",
+          "license": "Public domain",
+          "author": "NPS & MSU Acoustic Atlas/Jennifer Jerrett",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/birds_2.mp3",
+          "dur": 4.049,
+          "gain": 1.0,
+          "note": "Короткая фраза лесной птицы",
+          "src": "File:Yellowstone sound library - Mountain Bluebird - 001.mp3",
+          "page": "https://commons.wikimedia.org/wiki/File:Yellowstone_sound_library_-_Mountain_Bluebird_-_001.mp3",
+          "license": "Public domain",
+          "author": "NPS & MSU Acoustic Atlas/Jennifer Jerrett",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    },
+    "door": {
+      "default": 0,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/door_1.mp3",
+          "dur": 0.601,
+          "gain": 1.0,
+          "note": "Скрип открываемой деревянной двери",
+          "src": "File:Open squeaky door 2 (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Open_squeaky_door_2_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/door_2.mp3",
+          "dur": 0.601,
+          "gain": 1.0,
+          "note": "Скрип открываемой деревянной двери",
+          "src": "File:Open squeaky door 3 (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Open_squeaky_door_3_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    },
+    "spoon": {
+      "default": 0,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/spoon_1.mp3",
+          "dur": 1.045,
+          "gain": 1.0,
+          "note": "Ложка падает и звенит",
+          "src": "File:Dropping spoon (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Dropping_spoon_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/spoon_2.mp3",
+          "dur": 0.836,
+          "gain": 1.0,
+          "note": "Ложка падает и звенит",
+          "src": "File:Dropping spoon 2 (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Dropping_spoon_2_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    },
+    "crack": {
+      "default": 0,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/crack_1.mp3",
+          "dur": 0.418,
+          "gain": 1.0,
+          "note": "Короткий сухой хруст веточки",
+          "src": "File:Snapping twig.ogg",
+          "page": "https://commons.wikimedia.org/wiki/File:Snapping_twig.ogg",
+          "license": "Public domain",
+          "author": "stephan",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/crack_2.mp3",
+          "dur": 0.914,
+          "gain": 1.0,
+          "note": "Короткий сухой хруст веточки",
+          "src": "File:Crunch (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Crunch_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    },
+    "bear_big": {
+      "default": 1,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/bear_big_1.mp3",
+          "dur": 1.045,
+          "gain": 1.0,
+          "note": "Низкий рык большого медведя",
+          "src": "File:Yellowstone sound library - Grizzly Bear vocalizations - 001.mp3",
+          "page": "https://commons.wikimedia.org/wiki/File:Yellowstone_sound_library_-_Grizzly_Bear_vocalizations_-_001.mp3",
+          "license": "Public domain",
+          "author": "NPS & MSU Acoustic Atlas / Jennifer Jerrett",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены. Рык может пугать; малый голос — обработка взрослого медведя."
+        },
+        {
+          "file": "audio/bear_big_2.mp3",
+          "dur": 1.411,
+          "gain": 1.0,
+          "note": "Низкий рык большого медведя",
+          "src": "File:Bear growl.ogg",
+          "page": "https://commons.wikimedia.org/wiki/File:Bear_growl.ogg",
+          "license": "CC BY 3.0",
+          "author": "Shizhao",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены. Рык может пугать; малый голос — обработка взрослого медведя."
+        }
+      ]
+    },
+    "bear_mid": {
+      "default": 1,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/bear_mid_1.mp3",
+          "dur": 1.045,
+          "gain": 1.0,
+          "note": "Более высокий голос медведя",
+          "src": "File:Yellowstone sound library - Grizzly Bear vocalizations - 001.mp3",
+          "page": "https://commons.wikimedia.org/wiki/File:Yellowstone_sound_library_-_Grizzly_Bear_vocalizations_-_001.mp3",
+          "license": "Public domain",
+          "author": "NPS & MSU Acoustic Atlas / Jennifer Jerrett",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены. Рык может пугать; малый голос — обработка взрослого медведя."
+        },
+        {
+          "file": "audio/bear_mid_2.mp3",
+          "dur": 1.045,
+          "gain": 1.0,
+          "note": "Более высокий голос медведя",
+          "src": "File:Bear growl.ogg",
+          "page": "https://commons.wikimedia.org/wiki/File:Bear_growl.ogg",
+          "license": "CC BY 3.0",
+          "author": "Shizhao",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены. Рык может пугать; малый голос — обработка взрослого медведя."
+        }
+      ]
+    },
+    "bear_small": {
+      "default": 1,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/bear_small_1.mp3",
+          "dur": 0.444,
+          "gain": 1.0,
+          "note": "Короткий повышенный голос медвежонка",
+          "src": "File:Yellowstone sound library - Grizzly Bear vocalizations - 001.mp3",
+          "page": "https://commons.wikimedia.org/wiki/File:Yellowstone_sound_library_-_Grizzly_Bear_vocalizations_-_001.mp3",
+          "license": "Public domain",
+          "author": "NPS & MSU Acoustic Atlas / Jennifer Jerrett",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены. Рык может пугать; малый голос — обработка взрослого медведя."
+        },
+        {
+          "file": "audio/bear_small_2.mp3",
+          "dur": 1.411,
+          "gain": 1.0,
+          "note": "Короткий повышенный голос медвежонка",
+          "src": "File:Bear growl.ogg",
+          "page": "https://commons.wikimedia.org/wiki/File:Bear_growl.ogg",
+          "license": "CC BY 3.0",
+          "author": "Shizhao",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены. Рык может пугать; малый голос — обработка взрослого медведя."
+        }
+      ]
+    },
+    "whoosh": {
+      "default": 0,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/whoosh_1.mp3",
+          "dur": 0.444,
+          "gain": 1.0,
+          "note": "Короткий взмах и свист воздуха",
+          "src": "File:Swipe (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Swipe_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/whoosh_2.mp3",
+          "dur": 3.944,
+          "gain": 1.0,
+          "note": "Короткий взмах и свист воздуха",
+          "src": "File:Sweep (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Sweep_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    },
+    "knock": {
+      "default": 0,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/knock_1.mp3",
+          "dur": 0.862,
+          "gain": 1.0,
+          "note": "Короткий стук по дереву",
+          "src": "File:Knocking on wood or door.ogg",
+          "page": "https://commons.wikimedia.org/wiki/File:Knocking_on_wood_or_door.ogg",
+          "license": "Public domain",
+          "author": "stephan",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/knock_2.mp3",
+          "dur": 0.392,
+          "gain": 1.0,
+          "note": "Короткий стук по дереву",
+          "src": "File:Knock on door.wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Knock_on_door.wav",
+          "license": "CC0",
+          "author": "Asud12",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    },
+    "goat_song": {
+      "default": 0,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/goat_song_1.mp3",
+          "dur": 0.836,
+          "gain": 1.0,
+          "note": "Одно протяжное блеяние козы",
+          "src": "File:Herd of goats bleating.ogg",
+          "page": "https://commons.wikimedia.org/wiki/File:Herd_of_goats_bleating.ogg",
+          "license": "Public domain",
+          "author": "stephan",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/goat_song_2.mp3",
+          "dur": 0.627,
+          "gain": 1.0,
+          "note": "Одно протяжное блеяние козы",
+          "src": "File:Goat in Antefasy.wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Goat_in_Antefasy.wav",
+          "license": "CC0",
+          "author": "Gasybeaugosse2020",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    },
+    "lock": {
+      "default": 0,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/lock_1.mp3",
+          "dur": 0.418,
+          "gain": 1.0,
+          "note": "Щелчок дверного замка с шорохом",
+          "src": "File:Lock (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Lock_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/lock_2.mp3",
+          "dur": 0.34,
+          "gain": 1.0,
+          "note": "Щелчок дверного замка с шорохом",
+          "src": "File:342706 spacejoe lock-3-open-lock-3.wav",
+          "page": "https://commons.wikimedia.org/wiki/File:342706_spacejoe_lock-3-open-lock-3.wav",
+          "license": "CC0",
+          "author": "SpaceJoe",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    },
+    "water": {
+      "default": 0,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/water_1.mp3",
+          "dur": 4.049,
+          "gain": 1.0,
+          "note": "Спокойный шум текущей воды",
+          "src": "File:River flowing (Gravity Sound).mp3",
+          "page": "https://commons.wikimedia.org/wiki/File:River_flowing_(Gravity_Sound).mp3",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/water_2.mp3",
+          "dur": 4.049,
+          "gain": 1.0,
+          "note": "Спокойный шум текущей воды",
+          "src": "File:Yellowstone sound library - American Dipper & Canada Geese - 001.mp3",
+          "page": "https://commons.wikimedia.org/wiki/File:Yellowstone_sound_library_-_American_Dipper_%26_Canada_Geese_-_001.mp3",
+          "license": "Public domain",
+          "author": "NPS & MSU Acoustic Atlas/Jennifer Jerrett",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены. Возможны голоса птиц над водой."
+        }
+      ]
+    },
+    "wolf": {
+      "default": 0,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/wolf_1.mp3",
+          "dur": 2.821,
+          "gain": 1.0,
+          "note": "Протяжный голос воющего волка",
+          "src": "File:11wolf.wav",
+          "page": "https://commons.wikimedia.org/wiki/File:11wolf.wav",
+          "license": "CC BY 4.0",
+          "author": "Data Clock",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/wolf_2.mp3",
+          "dur": 2.038,
+          "gain": 1.0,
+          "note": "Протяжный голос воющего волка",
+          "src": "File:Wolf howls.ogg",
+          "page": "https://commons.wikimedia.org/wiki/File:Wolf_howls.ogg",
+          "license": "Public domain",
+          "author": "",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    },
+    "heavy_steps": {
+      "default": 0,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/heavy_steps_1.mp3",
+          "dur": 4.049,
+          "gain": 1.0,
+          "note": "Тяжёлые шаги по деревянной поверхности",
+          "src": "File:Wooden stairs (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Wooden_stairs_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/heavy_steps_2.mp3",
+          "dur": 4.049,
+          "gain": 1.0,
+          "note": "Тяжёлые шаги по деревянной поверхности",
+          "src": "File:Walking on small wooden bridge (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Walking_on_small_wooden_bridge_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    },
+    "steps": {
+      "default": 0,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/steps_1.mp3",
+          "dur": 4.049,
+          "gain": 1.0,
+          "note": "Шаги с шуршанием сухих листьев",
+          "src": "File:Walking through leaves (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Walking_through_leaves_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/steps_2.mp3",
+          "dur": 4.049,
+          "gain": 1.0,
+          "note": "Шаги с шуршанием сухих листьев",
+          "src": "File:Walking in woods (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Walking_in_woods_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    },
+    "crickets": {
+      "default": 1,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/crickets_1.mp3",
+          "dur": 4.049,
+          "gain": 1.0,
+          "note": "Ритмичное стрекотание полевого сверчка",
+          "src": "File:Ringing cricket winding down.ogg",
+          "page": "https://commons.wikimedia.org/wiki/File:Ringing_cricket_winding_down.ogg",
+          "license": "CC BY-SA 4.0",
+          "author": "Jidanni",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/crickets_2.mp3",
+          "dur": 4.049,
+          "gain": 1.0,
+          "note": "Ритмичное стрекотание полевого сверчка",
+          "src": "File:Field cricket Gryllus pennsylvanicus.ogg",
+          "page": "https://commons.wikimedia.org/wiki/File:Field_cricket_Gryllus_pennsylvanicus.ogg",
+          "license": "CC BY-SA 3.0",
+          "author": "Thatcher",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    },
+    "wings": {
+      "default": 0,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/wings_1.mp3",
+          "dur": 1.306,
+          "gain": 1.0,
+          "note": "Серия шумных взмахов птичьих крыльев",
+          "src": "File:Nz-pigeon-song.wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Nz-pigeon-song.wav",
+          "license": "CC BY 4.0",
+          "author": "Unknown authorUnknown author; Department of Conservation",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены. По огибающей выбран широкополосный участок; возможны песня птицы и цикады."
+        },
+        {
+          "file": "audio/wings_2.mp3",
+          "dur": 1.437,
+          "gain": 1.0,
+          "note": "Серия шумных взмахов птичьих крыльев",
+          "src": "File:Lamprotornis nitens phoenicopterus, roep en gevladder, 2022-09-26 10h26, Pretoria, a.mp3",
+          "page": "https://commons.wikimedia.org/wiki/File:Lamprotornis_nitens_phoenicopterus,_roep_en_gevladder,_2022-09-26_10h26,_Pretoria,_a.mp3",
+          "license": "CC BY-SA 4.0",
+          "author": "JMK",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены. По огибающей выбран широкополосный участок; возможны песня птицы и цикады."
+        }
+      ]
+    },
+    "rooster": {
+      "default": 0,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/rooster_1.mp3",
+          "dur": 1.724,
+          "gain": 1.0,
+          "note": "Протяжное утреннее пение петуха",
+          "src": "File:Small rooster crowing.ogg",
+          "page": "https://commons.wikimedia.org/wiki/File:Small_rooster_crowing.ogg",
+          "license": "Public domain",
+          "author": "alys",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/rooster_2.mp3",
+          "dur": 2.847,
+          "gain": 1.0,
+          "note": "Протяжное утреннее пение петуха",
+          "src": "File:Medium rooster crowing.ogg",
+          "page": "https://commons.wikimedia.org/wiki/File:Medium_rooster_crowing.ogg",
+          "license": "Public domain",
+          "author": "alys",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    },
+    "fox": {
+      "default": 0,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/fox_1.mp3",
+          "dur": 4.049,
+          "gain": 1.0,
+          "note": "Тихое шуршание травы и листьев",
+          "src": "File:Rustling leaves (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Rustling_leaves_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/fox_2.mp3",
+          "dur": 4.049,
+          "gain": 1.0,
+          "note": "Тихое шуршание травы и листьев",
+          "src": "File:Walking through tall grass (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Walking_through_tall_grass_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    },
+    "bark": {
+      "default": 0,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/bark_1.mp3",
+          "dur": 0.47,
+          "gain": 1.0,
+          "note": "Короткий лай домашней собаки",
+          "src": "File:Barking of a dog.ogg",
+          "page": "https://commons.wikimedia.org/wiki/File:Barking_of_a_dog.ogg",
+          "license": "CC BY-SA 3.0",
+          "author": "Amada44",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/bark_2.mp3",
+          "dur": 0.47,
+          "gain": 1.0,
+          "note": "Короткий лай домашней собаки",
+          "src": "File:Woof (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Woof_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    },
+    "wind": {
+      "default": 0,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/wind_1.mp3",
+          "dur": 4.049,
+          "gain": 1.0,
+          "note": "Шелест ветра среди деревьев",
+          "src": "File:Wind in forest (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Wind_in_forest_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/wind_2.mp3",
+          "dur": 4.049,
+          "gain": 1.0,
+          "note": "Шелест ветра среди деревьев",
+          "src": "File:Leaves in the wind (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Leaves_in_the_wind_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    },
+    "bell": {
+      "default": 0,
+      "loop": false,
+      "variants": [
+        {
+          "file": "audio/bell_1.mp3",
+          "dur": 0.418,
+          "gain": 1.0,
+          "note": "Звон металлического колокольчика с затуханием",
+          "src": "File:Bell-ring.flac",
+          "page": "https://commons.wikimedia.org/wiki/File:Bell-ring.flac",
+          "license": "CC0",
+          "author": "qubodup",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/bell_2.mp3",
+          "dur": 0.705,
+          "gain": 1.0,
+          "note": "Звон металлического колокольчика с затуханием",
+          "src": "File:Sleigh bells.wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Sleigh_bells.wav",
+          "license": "CC0",
+          "author": "The Midnite Wolf",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    },
+    "forest": {
+      "default": 0,
+      "loop": true,
+      "variants": [
+        {
+          "file": "audio/forest_1.mp3",
+          "dur": 23.04,
+          "gain": 1.0,
+          "note": "Тихий лес с ветром и птицами",
+          "src": "File:Gentle breeze and birds singing.ogg",
+          "page": "https://commons.wikimedia.org/wiki/File:Gentle_breeze_and_birds_singing.ogg",
+          "license": "Public domain",
+          "author": "ezwa",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        },
+        {
+          "file": "audio/forest_2.mp3",
+          "dur": 23.04,
+          "gain": 1.0,
+          "note": "Тихий лес с ветром и птицами",
+          "src": "File:Forest ambience (Gravity Sound).wav",
+          "page": "https://commons.wikimedia.org/wiki/File:Forest_ambience_(Gravity_Sound).wav",
+          "license": "CC BY 4.0",
+          "author": "Gravity Sound",
+          "risk": "[uncertain] Без прослушивания: узнаваемость и отсутствие музыки не подтверждены."
+        }
+      ]
+    }
+  }
+}
